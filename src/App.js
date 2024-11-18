@@ -120,7 +120,8 @@ export default function App() {
       <div 
         style={{
           display: 'flex',
-          justifyContent: 'space-around',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
           border: '1px solid black',
         }}
         >
@@ -132,12 +133,11 @@ export default function App() {
                   src="https://i.ibb.co/3zRvPs8/Dos-carte-pokemon.jpg"
                   style={{
                     width: '200px', 
-                    height: '300px', 
+                    height: 'auto', 
                     margin: '10px',
                     border: '5px solid grey',
                     backgroundColor: 'grey',
-                    borderRadius: '5px',
-                    width: '300px'
+                    borderRadius: '5px'
                   }}
                   onClick={() => handleClickTurn(item.id)}
                 />
